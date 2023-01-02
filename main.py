@@ -4,7 +4,7 @@ from graphic_arts.start_game_banner import run_screensaver
 
 
 def attack(char_name: str, char_class: str) -> str:
-    """Реализация функции атаки классов."""
+    """Реализация функции атаки для игровых классов."""
     if char_class == 'warrior':
         return (f"""{char_name} нанёс урон
          противнику равный {5 + randint(3, 5)}""")
@@ -18,7 +18,7 @@ def attack(char_name: str, char_class: str) -> str:
 
 
 def defence(char_name: str, char_class: str) -> str:
-    """Реализация 2 типов защиты (блокировка урона) для классов."""
+    """Реализация функции защиты (блокировка урона) для игровых классов."""
     if char_class == 'warrior':
         return (f"""{char_name} блокировал
         {10 + randint(5, 10)} урона""")
@@ -32,7 +32,7 @@ def defence(char_name: str, char_class: str) -> str:
 
 
 def special(char_name: str, char_class: str) -> str:
-    """Реализация функции спец. умения"""
+    """Реализация функции спец. умения для игровых классов."""
     if char_class == 'warrior':
         return (f"""{char_name} применил специальное
          умение «Выносливость {80 + 25}»""")
